@@ -1,0 +1,88 @@
+@use "scss/_mixins.scss" as *;
+
+.navigation_tool{
+    position: relative;
+    z-index: 1;
+    &-parent{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        max-width: 1200px;    
+        display: flex;
+        justify-content: space-between;
+        &-item{
+            display: flex;
+            align-self: center;
+            gap: 10px;
+            justify-content: space-between;
+            &-tel img{
+                margin-top: -2px;
+            }
+            &-tel a{
+                text-decoration: none;
+                color: #fff;
+                @include forFonts (500, 18px, 21px, 0.05em, uppercase);
+            }
+        }
+        &-item_links{
+            display: flex;
+            align-self: center;
+            gap: 50px;
+            & a{
+                text-decoration: none;
+                color: #fff;
+                @include forFonts(400, 14px, 16px, 0.15em, uppercase);
+            }
+        }
+
+    }   
+}
+
+.line{
+    border: 0.5px solid #878787;
+    margin-top: 20px;
+}
+
+.burger button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hero_text{
+    position: relative;
+    // margin-left: calc(50% - 83px);
+    margin-top: 135px;
+    padding-bottom: 10px;
+    width: 166px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    & p{
+        padding-bottom: 10px; 
+    }
+    & :nth-child(1){
+        @include forFonts(300, 30px, 36px, 0.08em, uppercase);
+    }
+    & :nth-child(2){
+        @include forFonts(300, 16px, 24px, 0.12em, uppercase);
+    }
+
+}
+
+.shadow{
+    @include backImage(url(../pictures/back.png));
+    position: relative;
+    height: 800px;
+    &::before{
+        content: "";
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+}

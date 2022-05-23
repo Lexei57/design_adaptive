@@ -1,0 +1,15 @@
+@mixin backImage($bi){
+    background-image: $bi;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin forFonts($fw, $fs, $lh, $ls, $tt){
+    font-style: normal;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+    text-transform: $tt;
+}
