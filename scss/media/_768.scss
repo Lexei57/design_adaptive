@@ -2,7 +2,7 @@
 @use "scss/_navigation.scss" as *;
 
 // 320
-@media (min-width:320px) and (max-width:768px){
+@media (min-width:320px) and (max-width:767px){
     .navigation_tool-parent-item_links{
         display: none;
     }
@@ -18,6 +18,9 @@
         & button{
             display: none;
         }
+    }
+    .arrows{
+        display: none;
     }
 
 }
@@ -42,10 +45,104 @@
         width: 676px;
             & button{
                 display: none;
-            }
+            }   
     }
-       
+    .criteria{
+        width: 676px;
+
+    }
+    .hero_text p{
+        padding-bottom: 26px;
+    }
+    .slider-inner img{
+        width: 678px;
+        height: 500px;
+    }
+    .slider-inner .slider-item:first-child{
+        padding-left: 45px;
+    }
+    
+    .slider-inner .slider-item{
+        padding-left: 30px;
+    }
+    
+    .slider-inner .slider-item:last-child{
+        padding-right: 45px;
+    }
+    .linear{
+        margin-top: 30px;
+        width: 483px;
+    }
+    .arrows{
+        display: none;
+    }
+    .tasks_decision{
+        width: 678px;
+    }
+    .task_flexbox{
+        flex-direction: row;
+        gap: 30px;
+    }
+    .task{
+        flex: 1;
+    }  
+    .decision{
+        flex: 1;
+    } 
+    .des{
+        @include forFonts(300, 30px, 45px, 0.08em, uppercase);
+    }
+    .bigger{
+        @include forFonts(300, 20px, 27px, 0.12em, uppercase);
+    }
+    .small{
+        @include forFonts(300, 16px, 24px, none, none );
+    } 
+    .cards{
+        gap: 30px;
+        & img{
+        width: 324px;
+        height: 324px;
+        }
+    }
+    .bigimg{
+        width: 768px;
+        height: 500px;
+        margin-left: -45px;
+        padding-bottom: 40px;
+    }
+    .peculiarities_items{
+        flex-direction: row;
+        gap: 30px;
+    }
+    .peculiarities-item{
+        padding-bottom: 15px;
+    }
+    .slider_img {
+        @include forFonts(300, 30px, 45px, 0.08em, uppercase);
+        padding-top: 65px;
+    }
+    .other_img img{
+        width: 324px;
+        height: 324px;
+    }
+    .link{
+        @include forFonts(300, 40px, 47px, 0.08em, uppercase);
+        color: #777777;
+        margin-left: auto;
+        margin-right: auto;
+        width: 650px;
+        padding-top: 100px;
+
+    }   
+    .slider_img button{
+        right: 45px;
+    } 
+    .footer_wrapper{
+        margin-left: 280px;
+    }    
 }
+ 
 // 
 
 
@@ -71,16 +168,137 @@
         max-height: 600px;
     }
     .specification{
-        background-color: rebeccapurple;
         width: 930px;
         & button{
             display: none;
         }
     }
+    .specification-items{
+        flex-wrap: nowrap;
+        gap: 30px;
+        height: 100%;
+    }
+    .description{
+        line-height: 2;
+    }
+    .criteria{
+        width: 450px;
+    }
+    .hero_text p{
+        padding-bottom: 26px;
+    }
+    .slider-inner img{
+        width: 930px;
+        height: 600px;
+    }
+    .linear{
+        margin-top: 40px;
+        width: 483px;
+    }
+
+    .slider-inner{
+        & :nth-child(2){
+            display: none;
+        }
+        & :nth-child(3){
+            display: none;
+        }
+        & :nth-child(4){
+            display: none;
+        }
+    }
+    .slider-inner .slider-item:first-child{
+        padding-left: 47px;
+    }
+    .tasks_decision{
+        width: 930px;
+    }
+    .task_flexbox{
+        flex-direction: row;
+        gap: 31px;
+    }
+    .task{
+        flex: 1;
+    }  
+    .decision{
+        flex: 1;
+    } 
+    .des{
+        @include forFonts(300, 30px, 45px, 0.08em, uppercase);
+    }
+    .bigger{
+        @include forFonts(300, 20px, 27px, 0.12em, uppercase);
+    }
+    .small{
+        @include forFonts(300, 16px, 24px, none, none );
+    }
+    .cards{
+        gap: 30px;
+        & img{
+        width: 450px;
+        height: 350px;
+        }
+    }
+    .bigimg{
+        width: 1024px;
+        height: 600px;
+        margin-left: -47px;
+        padding-bottom: 94px;
+    }
+    .peculiarities_items{
+        flex-direction: row;
+        gap: 30px;
+    }
+    .peculiarities-item{
+        padding-bottom: 24px;
+    }
+    .slider_img {
+        @include forFonts(300, 30px, 45px, 0.08em, uppercase);
+        padding-top: 120px;
+    }
+    .other_img{
+        gap: 30px;
+    }
+    .other_img img{
+        width: 290px;
+        height: 270px;
+    }
+    .other_img{
+        & :nth-child(2){
+            display: flex;
+        }
+        & :nth-child(3){
+            display: flex;
+        }
+    }
+    .lleft{
+        left: 73px;
+    }
+
+    .rright{
+        left: 920px;
+    }
+    .link{
+        @include forFonts(300, 40px, 47px, 0.08em, uppercase);
+        color: #777777;
+        margin-left: auto;
+        margin-right: auto;
+        width: 650px;
+        padding-top: 130px;
+
+    } 
+    .slider_img button{
+        display: none;
+    } 
+    .footer_wrapper{
+        margin-left: 410px;
+    }    
+
 }
+// 
 
 // 1920
-@media (min-width:1293px) and (max-width: 1920px){
+@media (min-width:1293px) and (max-width: 1920px) {
     .navigation_tool{
         &-parent{
             margin: auto;
@@ -103,8 +321,148 @@
             display: block;
         }
     }
-}
+    .specification{
+        width: 1200px;
+    }
+    .specification-items{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 102px;
+        margin: 0 50px;
+    }
+    .criteria{
+        width: 483px;
+    }
+    .description{
+        width: 483px;
+        line-height: 2;
+    }
+    .specification_name{
+        padding-top: 150px;
+        margin: 0 50px;
+        max-width: 569px;
 
+    }
+    .hero_text p{
+        padding-bottom: 26px;
+    }
+    .linear{
+        margin-top: 40px;
+        width: 483px;
+    }
+    .slider-inner img{
+        width: 1200px;
+        height: 700px;
+    }
+    .slider-inner .slider-item:first-child{
+        margin-left: 350px;
+    }
+    .slider-inner{
+        & :nth-child(2){
+            display: none;
+        }
+        & :nth-child(3){
+            display: none;
+        }
+        & :nth-child(4){
+            display: none;
+        }
+    }
+    .slider-inner .slider-item:first-child{
+        padding-left: 47px;
+    }
+    .left{
+        position: absolute;
+        transform: translateY(-50%);
+        left: 480px;
+    }
+    .right{
+        position: absolute;
+        transform: translateY(-50%);
+        left: 1474px;
+    }
+    .tasks_decision{
+        width: 1098px;
+    }
+    .task_flexbox{
+        flex-direction: row;
+        gap: 102px;
+    }
+    .task{
+        flex: 1;
+    }  
+    .decision{
+        flex: 1;
+    } 
+    .des{
+        @include forFonts(300, 30px, 45px, 0.08em, uppercase);
+    }
+    .bigger{
+        @include forFonts(300, 20px, 27px, 0.12em, uppercase);
+    }
+    .small{
+        @include forFonts(300, 16px, 24px, none, none );
+    }
+    .cards{
+        gap: 30px;
+        & img{
+        width: 534px;
+        height: 380px;
+        }
+    }
+    .bigimg{
+        width: 1920px;
+        height: 800px;
+        margin-left: -411px;
+        padding-bottom: 100px;
+    }
+    .peculiarities_items{
+        flex-direction: row;
+        gap: 30px;
+    }
+    .other_img{
+        gap: 30px;
+    }
+    .other_img img{
+        width: 278px;
+        height: 270px;
+        margin-left: -20px;
+    }
+    .other_img{
+        & :nth-child(2){
+            display: flex;
+        }
+        & :nth-child(3){
+            display: flex;
+        }
+        & :nth-child(4){
+            display: flex;
+        }
+    }
+    .lleft{
+        left: 400px;
+    }
+
+    .rright{
+        left: 1480px;
+    }
+    .link{
+        @include forFonts(300, 40px, 47px, 0.08em, uppercase);
+        color: #777777;
+        margin-left: auto;
+        margin-right: auto;
+        width: 650px;
+        padding-top: 130px;
+
+    } 
+    .slider_img button{
+        display: none;
+    } 
+    .footer_wrapper{
+        margin-left: 850px;
+    }    
+
+}
 
 
 
