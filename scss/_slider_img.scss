@@ -1,0 +1,76 @@
+@use "scss/_mixins.scss" as *;
+
+// кейс для сладйера с выступающей картинкой
+.slider_img{
+    padding-top: 30px;
+}
+
+.slider_img .slider_wrapper{
+    width: auto;
+    overflow: auto;
+}
+
+.slider-inner{
+    display: flex;
+}
+
+.slider-inner img{
+    width: 290px;
+    height: 290px;
+}
+
+.slider-inner .slider-item:first-child{
+    padding-left: 15px;
+}
+
+.slider-inner .slider-item{
+    padding-left: 10px;
+}
+
+.slider-inner .slider-item:last-child{
+    padding-right: 15px;
+}
+
+.slider_wrapper{
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.arrows{
+    position: absolute;
+    top:50%;
+    cursor: pointer;
+}
+.left{
+    position: absolute;
+    transform: translateY(-50%);
+    left: 97px;
+}
+.right{
+    position: absolute;
+    transform: translateY(-50%);
+    left: 877px;
+}
+
+
+.linear{
+    width: 216px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slider-control{
+    width: 61px;
+    position: absolute;
+    border: 3px solid #393246;
+    background-color: #393246;
+    padding: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-linear{
+    border: 1px solid #D5D5D5;
+    background-color: #D5D5D5;
+}
